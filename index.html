@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fitness Plus</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+           /* CSS Reset */
+           body{
+            font-family: 'Balsamiq Sans', cursive;
+               color: cornsilk;
+               margin: 0px;
+               padding: 0px;
+               background: url('img/bg.jpg');
+           }
+         .left{
+             display: inline-block ;
+           /* border: 2px solid red; */ 
+            position: absolute;
+             left: 60px;
+             top: 20px;
+         } 
+         .left img{
+             width: 85px;
+           /*  filter: invert(100%); */ 
+         }
+          .left div{
+              line-height: 19px;
+              font-size: 21px;
+              text-align: center;
+          }
+
+         .mid{
+             display: block;
+             width: 55%;
+             margin: 30px auto;
+            /* border: 2px solid yellow; */ 
+         } 
+         .right{
+             position: absolute;
+             right: 34px;
+             top: 45px;
+            display: inline-block;
+           /* border: 2px solid blue; */ 
+         }
+         .navbar{
+             display: inline-block;
+         }
+         .navbar li{
+             display: inline-block;
+             font-size: 20px;
+             
+         }
+         .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 26px;
+            font-style: oblique;
+            font-weight: lighter;
+         }
+         .navbar li a:hover, .navbar li a.active  {
+            text-decoration: underline;
+            color: lightcoral;
+         }
+    
+    .btn{
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 0px 9px;
+        color: lightcyan;
+        background-color: black;
+        padding: 5px 17px;
+        border: 2px solid rgb(75, 72, 72);
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+       /* border: 2px solid wheat; */
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+          font-family: 'Balsamiq Sans', cursive;
+          text-align: center;
+          display: block;
+          width: 508px;
+          padding: 1px;
+          border: 2px solid black;
+          margin: 8px auto;
+          font-size: 17px;
+          border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    } 
+    .container button{
+        display: block;
+        width: 32%;
+        margin: 22px auto;
+    }
+
+    </style>
+
+    <body>
+         <header class="header">
+             <!--Left box for logo-->
+             <div class="left">
+                <img src="img/gym.png" alt="">
+                <div>Fitness Plus</div>
+             </div>
+             <!--mid box for navbar-->
+             <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                  </ul>
+             </div>
+             <!--right box for buttons-->
+             <div class="right">
+                 <button class="btn">Email Us</button>
+                 <button class="btn">Call Us Now</button>
+            </div>
+         </header>
+
+        <div class="container">
+            <h1>Join the best gym of Roorkee now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Email Id">
+                    </div>
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <button class="btn">SUBMIT</button>
+            </form>
+        </div> 
+
+    </body>
+</html>
